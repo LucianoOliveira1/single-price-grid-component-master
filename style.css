@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+body{
+  background-color: hsl(204, 43%, 93%);
+  margin-top: 7%;
+}
+.container{
+  margin: auto;
+  max-width: 45%;
+  height: 70vh;
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.mainText{
+  width: 100%;
+}
+h1{
+  color: hsl(179, 62%, 43%);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 35px 35px 30px 35px;
+}
+h2{
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 35px;
+}
+.main_description{
+  color: hsl(218, 22%, 67%);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 35px 15px 35px;
+  line-height: 25px;
+}
+.subscription{
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+}
+.why_us{
+  width: 50%;
+  background-color: hsl(179, 47%, 51%);
+}
+.time_subscription{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 35px 0px 15px 35px;
+}
+.price_time{
+  display: flex;
+  align-items: center;
+}
+.price{
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 35px;
+}
+.time{
+  color: rgba(255, 255, 255, 0.637);
+  font-size: 15px;
+  font-weight: 200;
+  padding-left: 10px;
+}
+.subscription_description{
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 5px 0px 35px 35px;
+}
+.singup_button{
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  padding: 10px 70px 10px 70px;
+  border-radius: 5px;
+  margin-left: 35px;
+  text-decoration: none;
+  box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.178);
+}
+.singup_button:hover{
+  background-color: hsla(71, 73%, 54%, 0.801);
+}
+.singup_button:active{
+  background-color: hsla(71, 73%, 54%, 0.171);
+  border: 1px solid white;
+}
+.us{
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 35px 0px 20px 35px;
+
+}
+li{
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0px 0px 2px 35px;
+}
+
+@media screen and (max-width: 1109px){
+  .container{
+    height: 75vh;
+  }
+  .subscription{
+    padding: 0px 15px 0px 0px;
+  }
+  .price{
+    font-size: 24px;
+  }
+  .time{
+    font-size: 12px;
+  }
+  .subscription_description{
+    font-size: 12px;
+  }
+  .singup_button{
+    font-size: 15px;
+    padding: 8px 50px 8px 50px;
+    box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.178);
+  }
+}
+
+@media screen and (max-width: 1041px){
+  .container{
+    margin: auto auto 50px auto;
+    width: 45%;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .subscription{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: hsl(179, 62%, 43%);
+  }
+  .why_us{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: hsl(179, 47%, 51%);
+  }
+}
+@media screen and (max-width: 900px){
+  h1{
+    padding: 35px 45px 30px 35px;
+  }
+  h2{
+    padding: 0px 45px 0px 35px;
+  }
+  .main_description{
+    padding: 10px 45px 15px 35px;
+  }
+
+}
+
+@media screen and (max-width: 605px){
+  .container{
+    min-width: 55%;
+  }
+}
+@media screen and (max-width: 495px){
+  .container{
+    min-width: 65%;
+  }
+}
+@media screen and (max-width: 425px){
+  .container{
+    min-width: 80%;
+  }
+}
+@media screen and (max-width: 375px){
+  .container{
+    min-width: 90%;
+  }
+  .singup_button{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 70px 10px 70px;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 261px){
+  .singup_button{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 70px 10px 50px;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+}
